@@ -6,9 +6,13 @@
 "use strict";
 
 /**
+ * A function is a set of statements that perform a task or calculates a value,
+ * we declare a function named bubbleSort with a single parameter; arr.
+ * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Defining_functions
  *
+ * The procedure that define the function are enclosed in curly brackets following the name and parameters
  */
-var bubbleSort = function bubbleSort(arr) {
+function bubbleSort(arr) {
   var swapped;
 
   do {
@@ -29,7 +33,7 @@ var bubbleSort = function bubbleSort(arr) {
 
   console.log(arr.join(" "));
   return arr;
-};
+}
 
 /**
  * We declare an array of unsorted numbers using the array literal method.
