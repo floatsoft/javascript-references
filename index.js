@@ -6,15 +6,39 @@
 "use strict";
 
 /**
- * A function is a set of statements that perform a task or calculates a value,
+ * A function is a set of statements that perform a task or calculate a value,
  * we declare a function named bubbleSort with a single parameter; arr.
+ * The procedure that define the function are enclosed in curly brackets following the name and parameters.
  * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Defining_functions
- *
- * The procedure that define the function are enclosed in curly brackets following the name and parameters
  */
 function bubbleSort(arr) {
-  var swapped;
+  /**
+   * We declare a global variable named swapped, as swapped is used only in the bubbleSort scope, 
+   * a global variable is not ideal.
+   * In ES6 we could declare this variable using the let statement - creating a block scope local variable.
+   * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+   * For more information on variable declarations see
+   * https://github.com/floatsoft/javascript-references/blob/hello-world/varDeclaration.js#L9-L15
+   *
+   * We initiate swapped to false, this is one of the two values that the boolean primitive can have, the other being true.
+   * See https://developer.mozilla.org/en-US/docs/Glossary/Boolean
+   * We could also leave swapped undefined by not assigning it a value, i.e: var swapped;
+   * Using the primitive undefined or boolean false will accomplish identical goals in our below code.
+   * See https://en.wikipedia.org/wiki/Undefined_value
+   * See https://developer.mozilla.org/en-US/docs/Glossary/undefined
+   * Normally it is better to explicitly assign a value to a variable.
+   */
+  var swapped = false;
 
+  /**
+   * The do...while statement creates a loop that executes a specified statement until the 
+   * test condition evaluates to false.
+   * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while
+   * 
+   * The do...while loop will always run at least once.
+   * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while#Using_do...while
+   * Therefore it will run despite swapped evaluating to false, despite the while condition seeking an evaluation of true.
+   */
   do {
     swapped = false;
 
