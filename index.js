@@ -58,32 +58,61 @@ function bubbleSort(arr) {
      * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
      * The expressions consist of an initialization, condition, and final-expression.
      * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for#Syntax
-     * 
+     *
      * We initialize our for loop with a declared variable named i assigned the integer value 0.
      * See https://developer.mozilla.org/en-US/docs/Glossary/number
      * This serves as our initialization expression, in this case used to initialize a counter variable
-     * 
+     *
      * The condition of our for loop must be met before each loop iteration.
      * In this case i must be less than the length of arr.
      * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
      * If the expression evaluates to false, execution skips to the first expression following the for construct.
-     * 
+     *
      * For our final-expression we increment our variable i by 1 using the increment arithmetic operator.
-     * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Increment_() 
-     * This occurs before the next evaluation of condition. 
-     * 
+     * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Increment_()
+     * This occurs before the next evaluation of condition.
+     *
      * Following our expressions is our block statement, this block contains our main sorting logic.
      * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block
      */
     for (var i = 0; i < arr.length; i++) {
-      console.log(arr.join(" "));
+      /**
+       * Here we use our Console object to print our array.
+       * See https://github.com/floatsoft/javascript-references/blob/a8a21cf1f9866c2693721c181b4ab6dae4af4dd8/index.js#L9-L17
+       * We print here to get glimpse of our array just before it reaches the adjacent pair comparison and subsequent sorting
+       * portion of our code.
+       * See https://en.wikipedia.org/wiki/Bubble_sort#Step-by-step_example
+       */
+      console.log("before", arr.join(" "));
 
+      /**
+       * An if statement executes it's statement only if a specified condition is truthy.
+       * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+       * See https://developer.mozilla.org/en-US/docs/Glossary/truthy
+       *
+       * Our condition is described just before our block statement. This condition will evaluate to a truthy or falsy value.
+       * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#Syntax
+       * See https://developer.mozilla.org/en-US/docs/Glossary/falsy
+       *
+       * Our condition dictates that arr[i] must be greater than arr[i + 1] by employing the greater than operator.
+       * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Greater_than_operator
+       *
+       * As a reminder, arr is our single parameter being passed to our bubbleSort function. arr must be an Array.
+       * See https://github.com/floatsoft/javascript-references/blob/bubble-sort/index.js#L13-L19
+       *
+       * We can select elements from our array by referencing there index.
+       * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Accessing_array_elements
+       * Here we use our variable i and the sum of i + 1 as our indexes.
+       *
+       * We finally select our array element by using bracket notation, i.e: [i]
+       * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#Bracket_notation
+       */
       if (arr[i] > arr[i + 1]) {
         var tmp = arr[i];
-        console.log(arr.join(" "));
         arr[i] = arr[i + 1];
         arr[i + 1] = tmp;
         swapped = true;
+        console.log("after", arr.join(" "));
       }
     }
     /**
@@ -92,7 +121,7 @@ function bubbleSort(arr) {
      */
   } while (swapped);
 
-  console.log(arr.join(" "));
+  console.log("final", arr.join(" "));
   return arr;
 }
 
