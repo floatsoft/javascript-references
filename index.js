@@ -118,6 +118,14 @@ function bubbleSort(arr) {
          * See https://en.wikipedia.org/wiki/In-place_algorithm
          */
         var tmp = arr[i];
+        /**
+         * We assign arr[i] with the value of arr[i + 1] in-place using our assignment operator, =.
+         * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators
+         * 
+         * This is because our condition for this block statement to be executed is that arr[i] must be greater than arr[i + 1],
+         * therefore these elements must be swapped to accomplish our sorting. 
+         * See https://en.wikipedia.org/wiki/Sorting_algorithm
+         */
         arr[i] = arr[i + 1];
         arr[i + 1] = tmp;
         swapped = true;
