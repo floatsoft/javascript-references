@@ -52,6 +52,7 @@ function bubbleSort(arr) {
      * Anticipating that the loop must run more than once, we use the below line to ensure that it will eventually end.
      */
     swapped = false;
+
     /**
      * The for statement creates a loop that consists of three optional expressions.
      * Following the expressions is usually a block statement, as in the code below.
@@ -112,21 +113,26 @@ function bubbleSort(arr) {
          * We assign the value of arr[i] to a variable named tmp.
          * For more information on variable declarations see
          * https://github.com/floatsoft/javascript-references/blob/hello-world/varDeclaration.js#L9-L15
-         * 
+         *
          * We do this so that we do not loss the value of arr[i] during the swapping process.
          * This is because we are doing our element swapping in-place.
          * See https://en.wikipedia.org/wiki/In-place_algorithm
          */
         var tmp = arr[i];
+
         /**
          * We assign arr[i] with the value of arr[i + 1] in-place using our assignment operator, =.
          * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators
-         * 
+         *
          * This is because our condition for this block statement to be executed is that arr[i] must be greater than arr[i + 1],
-         * therefore these elements must be swapped to accomplish our sorting. 
+         * therefore these elements must be swapped to accomplish our sorting.
          * See https://en.wikipedia.org/wiki/Sorting_algorithm
          */
         arr[i] = arr[i + 1];
+
+        /**
+         * We can now complete our swap by assigning arr[i + 1] to the value of temp which is equal to the previous value of arr[i].
+         */
         arr[i + 1] = tmp;
         swapped = true;
         console.log("after: ", arr.join(" "));
