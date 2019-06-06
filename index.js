@@ -68,9 +68,12 @@ function bubbleSort(arr) {
      * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
      * If the expression evaluates to false, execution skips to the first expression following the for construct.
      * 
-     * For our final-expression we increase i by one using the increment arithmetic operator.
+     * For our final-expression we increment our variable i by 1 using the increment arithmetic operator.
      * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Increment_() 
      * This occurs before the next evaluation of condition. 
+     * 
+     * Following our expressions is our block statement, this block contains our main sorting logic.
+     * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block
      */
     for (var i = 0; i < arr.length; i++) {
       console.log(arr.join(" "));
