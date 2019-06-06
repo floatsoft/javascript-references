@@ -83,7 +83,7 @@ function bubbleSort(arr) {
        * portion of our code.
        * See https://en.wikipedia.org/wiki/Bubble_sort#Step-by-step_example
        */
-      console.log("before", arr.join(" "));
+      console.log("before: ", arr.join(" "));
 
       /**
        * An if statement executes it's statement only if a specified condition is truthy.
@@ -108,11 +108,20 @@ function bubbleSort(arr) {
        * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#Bracket_notation
        */
       if (arr[i] > arr[i + 1]) {
+        /**
+         * We assign the value of arr[i] to a variable named tmp.
+         * For more information on variable declarations see
+         * https://github.com/floatsoft/javascript-references/blob/hello-world/varDeclaration.js#L9-L15
+         * 
+         * We do this so that we do not loss the value of arr[i] during the swapping process.
+         * This is because we are doing our element swapping in-place.
+         * See https://en.wikipedia.org/wiki/In-place_algorithm
+         */
         var tmp = arr[i];
         arr[i] = arr[i + 1];
         arr[i + 1] = tmp;
         swapped = true;
-        console.log("after", arr.join(" "));
+        console.log("after: ", arr.join(" "));
       }
     }
     /**
@@ -121,7 +130,7 @@ function bubbleSort(arr) {
      */
   } while (swapped);
 
-  console.log("final", arr.join(" "));
+  console.log("final: ", arr.join(" "));
   return arr;
 }
 
