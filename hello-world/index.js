@@ -2,6 +2,7 @@
  * No need to "use strict"
  * In this case even though we are not declaring this code as an ES6 module
  * the following code contains no syntax that can be caught by strict mode.
+ * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
  * See ./varDeclaration.js for an example that can benefit from strict mode.
  */
 
