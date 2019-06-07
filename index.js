@@ -48,7 +48,7 @@ function bubbleSort(arr) {
    */
   do {
     /**
-     * We assign our global variable named swapped to boolean false.
+     * We assign our variable named swapped to boolean false.
      * Anticipating that the loop must run more than once, we use the below line to ensure that it will eventually end.
      */
     swapped = false;
@@ -134,7 +134,21 @@ function bubbleSort(arr) {
          * We can now complete our swap by assigning arr[i + 1] to the value of temp which is equal to the previous value of arr[i].
          */
         arr[i + 1] = tmp;
+
+        /**
+         * Our variable named swapped is now reassigned the boolean value of true.
+         * This means that the condition of our do...while loop will be met.
+         * Therefore our do...while loop will continue to execute until this block statement no longer executes,
+         * and subsequently our variable named swapped is never reassignment.
+         * In other words the condition of our if statement dictating that arr[i] must be greater than arr[i + 1]
+         * must evaluate to a falsy value for each element pair in our array, arr, in order to exit from our do...while loop.
+         */
         swapped = true;
+
+        /**
+         * We print here to get glimpse of our array just after the adjacent pair sorting portion of our code.
+         * See https://en.wikipedia.org/wiki/Bubble_sort#Step-by-step_example
+         */
         console.log("after: ", arr.join(" "));
       }
     }
@@ -143,8 +157,22 @@ function bubbleSort(arr) {
      * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while#Syntax
      */
   } while (swapped);
+  /**
+   * We exit our do...while loop, at this point the bubble sort algorithm has completed it's course.
+   */
 
+  /**
+   * We print here to get glimpse of our array just after our code exits the above do...while loop.
+   * See https://en.wikipedia.org/wiki/Bubble_sort#Step-by-step_example
+   * At this point our array, arr, will be sorted in ascending order.
+   */
   console.log("final: ", arr.join(" "));
+
+  /**
+   * The return statement ends function execution and specifies a value to be returned to the function caller.
+   * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return
+   * We return our sorted array, arr.
+   */
   return arr;
 }
 
@@ -164,4 +192,10 @@ function bubbleSort(arr) {
  */
 var unsortedNumbersList = [8, 5, 6, 9, 3, 1, 4, 2, 7, 10];
 
+/**
+ * We call our bubbleSort function, passing our unsortedNumbersList as a single argument.
+ * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function#Syntax
+ * unsortedNumbersList will be taken by our bubbleSort function as the parameter arr, our array to be sorted.
+ * See https://github.com/floatsoft/javascript-references/blob/bubble-sort/index.js#L13-L19
+ */
 bubbleSort(unsortedNumbersList);
