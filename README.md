@@ -1,5 +1,7 @@
 # javascript-references
-Material to reference when working with JavaScript 
 
-## Bubble sort
-This reference explains how to sort a JavaScript array using the bubble sort algorithm.
+Material to reference when working with JavaScript
+
+### Bubble sort in JavaScript
+
+A simple sorting algorithm that repeatedly steps through a list, compares adjacent pairs and swaps them if they are in the wrong order. See https://en.wikipedia.org/wiki/Bubble_sort
