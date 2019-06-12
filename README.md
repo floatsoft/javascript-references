@@ -1,2 +1,3 @@
 # javascript-references
-Material to reference when working with JavaScript 
+
+Material to reference when working with JavaScript
