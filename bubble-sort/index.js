@@ -158,7 +158,7 @@ function bubbleSort(arr) {
      */
   } while (swapped);
   /**
-   * We exit our do...while loop, at this point the bubble sort algorithm has completed it's course.
+   * We exit our do...while loop, at this point the bubble sort algorithm has completed its course.
    */
 
   /**
