@@ -188,7 +188,10 @@ function bubbleSort(arr) {
  *
  * We declare this array as a constant named unsortedNumbersList.
  * For more information on variable declarations see
- * https://github.com/floatsoft/javascript-references/blob/hello-world/varDeclaration.js#L9-L15
+ * https://github.com/floatsoft/javascript-references/blob/hello-world/varDeclaration.js#L9-
+ *
+ * unsortedNumbersList is a one-dimensional array.
+ * See https://en.wikipedia.org/wiki/Array_data_structure#One-dimensional_arrays
  */
 var unsortedNumbersList = [8, 5, 6, 9, 3, 1, 4, 2, 7, 10];
 
