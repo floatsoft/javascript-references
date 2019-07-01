@@ -131,7 +131,7 @@ function bubbleSort(arr) {
         arr[i] = arr[i + 1];
 
         /**
-         * We can now complete our swap by assigning arr[i + 1] to the value of temp which is equal to the previous value of arr[i].
+         * We can now complete our swap by assigning arr[i + 1] to the value of tmp which is equal to the previous value of arr[i].
          */
         arr[i + 1] = tmp;
 
