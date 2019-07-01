@@ -98,7 +98,7 @@ function bubbleSort(arr) {
        * Our condition dictates that arr[i] must be greater than arr[i + 1] by employing the greater than operator.
        * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Greater_than_operator
        *
-       * As a reminder, arr is our single parameter being passed to our bubbleSort function. arr must be an Array.
+       * As a reminder, arr is the single parameter of our bubbleSort function and arr must be an Array.
        * See https://github.com/floatsoft/javascript-references/blob/bubble-sort/index.js#L13-L19
        *
        * We can select elements from our array by referencing there index.
