@@ -139,7 +139,7 @@ function bubbleSort(arr) {
          * Our variable named swapped is now reassigned the boolean value of true.
          * This means that the condition of our do...while loop will be met.
          * Therefore our do...while loop will continue to execute until this block statement no longer executes,
-         * and subsequently our variable named swapped is never reassignment.
+         * and subsequently our variable named swapped is never reassigned.
          * In other words the condition of our if statement dictating that arr[i] must be greater than arr[i + 1]
          * must evaluate to a falsy value for each element pair in our array, arr, in order to exit from our do...while loop.
          */
