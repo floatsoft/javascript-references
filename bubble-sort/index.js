@@ -153,7 +153,7 @@ function bubbleSort(arr) {
       }
     }
     /**
-     * The condition on this do...while loop is that is must run at least once and until swapped is false.
+     * The condition of our do...while loop is that it must run at least once and until swapped is false.
      * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while#Syntax
      */
   } while (swapped);
