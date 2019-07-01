@@ -114,7 +114,7 @@ function bubbleSort(arr) {
          * For more information on variable declarations see
          * https://github.com/floatsoft/javascript-references/blob/hello-world/varDeclaration.js#L9-L15
          *
-         * We do this so that we do not loss the value of arr[i] during the swapping process.
+         * We do this so that we do not lose the value of arr[i] during the swapping process.
          * This is because we are doing our element swapping in-place.
          * See https://en.wikipedia.org/wiki/In-place_algorithm
          */
